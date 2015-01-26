@@ -164,7 +164,8 @@ public class Controller {
 
 
         // handle the new post submission
-
+0 '
+        \                                                '
 
         get(new FreemarkerBasedRoute("/welcome", "welcome.ftl") {
             @Override
