@@ -60,7 +60,7 @@ public class Controller {
         sessionDAO = new SessionDAO(blogDatabase);
 
         cfg = createFreemarkerConfiguration();
-        setIpAddress("192.168.0.103");
+//        setIpAddress("192.168.0.103");
         staticFileLocation("/public");
         setPort(8082);
         initializeRoutes();
