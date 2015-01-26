@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link type="text/css" rel="stylesheet" href="/css/forms1.css">
+    <script type="text/javascript" src="/js/forms1.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//resources/demos/style.css">
+    <script>
+        $(function() {
+            var index = [
+                "Akarsh",
+                "Akanksha",
+                "Suyash",
+                "Prashant",
+                "Elephant",
+                "Take",
+                "Priyam",
+                "Chatrpur",
+                "Ant",
+                "England",
+                "Russia",
+                "Synchronization",
+                "Taken1",
+                "Taken2",
+                "Taken3",
+                "Java",
+                "Perl",
+                "PHP",
+                "Shailesh",
+                "Dharmendra",
+                "Netbeans",
+                "Navneet",
+                "Aspiring",
+                "Inspiration",
+                "Tahoma",
+                "text",
+                "Form",
+                "Abhishek",
+                "Alpha",
+                "Beta",
+                "Gamma",
+                "Hcl",
+                "Thyuto"
+
+            ];
+            $( "#f,#t" ).autocomplete({
+                source: index
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $( "#datepicker,#bo" ).datepicker();
+        });
+        var changeYear = $( "#datepicker,#bo" ).datepicker( "option", "changeYear" );
+
+        // Setter
+        $( "#datepicker,#bo" ).datepicker( "option", "changeYear", true );
+    </script>
+    <script type="text/javascript" src="../js/form.js"></script>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="header">
+    <h1 class="h1">Supreme Transport Solution</h1>
+</div>
+<h1 class="heading">Billing Form</h1>
+<form id="form"  class="fbody">
+    <div class="upper" id="lower" >
+        <div id="lower-wrapper">
+<div id="upper" class="lside">
+    <div ><input type="text" class="inputlt"  pattern="[A-Z]{3}" placeholder="Consignment"  name="consn" id="c" style="font-size: 16px "  onclick="clearInput(this)"><li class="rql">*Required Field</li> </div>
+    <div ><input type="text" class="inputlt" placeholder="Branch Name" name="branchname" id="bn" style="font-size: 16px " ><li class="rql">*Required Field</li></div>
+    <div ><input type="o" id="con" class="inputlt" placeholder="Consignor" name="consignor" style="font-size: 16px " ><li class="rql">*Required Field</li></div>
+
+    <div ><select class="inputlt" name="mode" id="s1" style="font-size: 16px " >
+        <option>Road</option>
+        <option>Plane</option>
+        <option>Sea</option>
+    </select><li class="rq">*Required Field</li> </div>
+    <div ><input class="inputlt" type="text" name="consni" placeholder="Consigni" id="c1" style="color: #4096ee;font-size: 16px " ><li class="rqr">*Required Field</li></div>
+    </div>
+
+<div id="uppe" class="rside">
+    <div class="input"><input class="inputrt" type="text" placeholder="From" name="from" id="f"  style="font-size: 16px " ><li class="rqr">*Required Field</li></div>
+    <div class="input"><input class="inputrt" type="text" placeholder="Pick Date" name="date" id="datepicker" style="color: #4096ee;font-size: 16px " ><li class="rqr">*Required Field</li></div>
+    <div class="input"><input class="inputrt" type="text" placeholder="to" name="to" id="t" style="color: #4096ee;font-size: 16px " ><li class="rqr">*Required Field</li></div>
+    <div class="input"><input class="inputrt" type="text" placeholder="To Destination" name="station" id="s" style="color: #4096ee;font-size: 16px " ><li class="rqr">*Required Field</li></div>
+
+    <div class=""><p>Bank Bility</p><input class="inputrt" type="checkbox" name="Bankbillity" id="b1" style="color: #4096ee;font-size: 16px " ><li class="rqr">*Required Field</li></div>
+</div>
+    </div></div>
+<div></div>
+    <div id="lower">
+        <div id='lower-wrapper'>
+        <div id="footer" class="ft1">
+        <div><input class="inputs" type="text" placeholder="C N Type" name="cntype" id="cn" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" placeholder="Packages" name="packages" id="p" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" placeholder="Weight" name="weight" id="w" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" placeholder="Party CH/NO" name="partych/no" id="pch" style="color: #4096ee;font-size: 16px " ></div>
+        <div><select id="type" class="inputs" name="type" style="color: #4096ee;font-size: 16px " >
+            <option>Normal</option>
+            <option>Easy</option>
+            <option>Difficult</option>
+        </select></div>
+        <div><input class="inputs" type="text" placeholder="Value" name="value" id="v1" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" placeholder="Truck No" name="Truckno" id="tcn" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" name="private"  placeholder="Private"  id="pm" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" name="rebkglrno" placeholder="Reb KgLrno" id="rbl" style="color: #4096ee;font-size: 16px " ></div>
+    </div>
+    <div id="footer" class="ft2">
+        <div><input class="inputs" type="text" placeholder="Fr.Tat" name="frtat" id="fa" style="color: #4096ee;font-size: 16px " ></div>
+        <div><select class="inputs" name="pkg" id="pt" style="color: #4096ee;font-size: 16px " >
+            <option>1</option>
+            <option>2</option>
+        </select></div>
+        <div><input class="inputs" type="text" placeholder="C Weight" name="cweight" id="cw" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" placeholder="Contains" name="contains" id="c3" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" name="consni" placeholder="Consni"  id="c1" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" placeholder="Billed On" name="billedon" id="bo" style="color: #4096ee;font-size: 16px " ></div>
+        <div><select class="inputs" name="rate" id="r1" style="color: #4096ee;font-size: 16px " >
+            <option>ft</option>
+            <option>sq</option>
+            <option>mt</option>
+        </select></div>
+        <div><input class="inputs" type="text" placeholder="Advance" name="advance" id="a" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" name="dlyof" placeholder="Dly Of" id="do" style="color: #4096ee;font-size: 16px " ></div>
+        <div><input class="inputs" type="text" name="formno" placeholder="Form No" id="fn" style="color: #4096ee;font-size: 16px " ></div>
+
+    </div>
+
+    <div id="footer" class="ft3">
+        <div><input placeholder=" ENTER FREIGHT" class="inputs" type="text" name="qty" id="fr" value="0"  onblur="findTotal()" ></div>
+        <div><input placeholder=" ENTER HAMALI" class="inputs" type="text" name="qty" id="hm" value="0"  onblur="findTotal()"></div>
+        <div><input placeholder="ENTER SUR.CH" class="inputs" type="text" name="qty" id="sc" value="0"  onblur="findTotal()"></div>
+        <div><input placeholder="ENTER ST.CH" class="inputs" type="text" name="qty" id="sc1" value="0"  onblur="findTotal()"></div>
+        <div><input placeholder="ENTER ST.CH" class="inputs" type="text" name="qty" id="stch" value="0"  onblur="findTotal()" ></div>
+        <div><input placeholder="ENTER RISK CH" class="inputs" type="text" name="qty" id="rch" value="0"  onblur="findTotal()"></div>
+        <div><input placeholder="ENTER DOOR.DLY" class="inputs" type="text" name="qty" id="ddly" value="0" onblur="findTotal()"></div>
+        <div><input placeholder="ENTER MISC.CH" class="inputs" type="text" name="qty" id="msh" value="0" onblur="findTotal()"></div>
+
+        <div><input class="inputs" type="text" name="total" id="total"></div>
+
+    </div>
+            <div style='clear: both;'/>
+        </div></div>
+    <div id="lower">
+        <div id="lower-wrapper">
+    <table id="myTable"></table></div></div>
+    <div id="sub" class="s1">
+        <input class="btn" type="submit" name="add" value="Alert" onsubmit="first()">
+        <input class="btn" type="button" id="addrow" name="adr" value="AddRow" onclick="myFunction()">
+        <input class="btn" type="button" id="modify" name="mod" value="Modify">
+        <input class="btn" type="button" id="exit" name="ex" value="Exit">
+    </div>
+</form>
+<div id="footer-wrapper">
+
+</div>
+
+
+
+</body>
+</html>

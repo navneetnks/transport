@@ -1,0 +1,29 @@
+.homeblockbox{
+    background: #ffffff;
+    height:35em;
+    width: 100%;
+}
+.homebox{
+    float: left;
+    margin:0px 100px 60px 00px;
+    background: #f9f9f9;
+    width: 160px;
+    height:170px;
+    border:1px solid #cccccc;
+}
+
+.homedivbox{
+    background: #d8d8af;
+    width: 160px;
+    height: 50px;
+    margin:120px 0 0;
+}
+.homemainbox{
+    padding:70px 20px 20px 150px;
+}
+.block-heading{
+    padding:14px ;
+    text-align: center;
+    font:  bold 15px/17px Arial;
+    color: #666666;
+}
