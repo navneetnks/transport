@@ -164,8 +164,7 @@ public class Controller {
 
 
         // handle the new post submission
-0 '
-        \                                                '
+
 
         get(new FreemarkerBasedRoute("/welcome", "welcome.ftl") {
             @Override
@@ -380,6 +379,13 @@ public class Controller {
             }
         });
         get(new FreemarkerBasedRoute("/truckunl", "/transport/truckunloading.html") {
+            @Override
+            protected void doHandle(Request request, Response response, Writer writer) throws IOException, TemplateException {
+                SimpleHash root=new SimpleHash();
+                template.process(root, writer);
+            }
+        });
+        get(new FreemarkerBasedRoute("/gatePass", "/transport/gatePassEntry.html") {
             @Override
             protected void doHandle(Request request, Response response, Writer writer) throws IOException, TemplateException {
                 SimpleHash root=new SimpleHash();
