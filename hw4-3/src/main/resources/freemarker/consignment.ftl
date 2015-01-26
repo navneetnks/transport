@@ -21,6 +21,7 @@
             Consignment
           </td>
           <td>
+
             <input type="text" name="consignmentId" value="${consignmentId}">
           </td>
 

@@ -1,19 +1,29 @@
 /**
  * Created by Akarsh Nagariya on 1/16/2015.
  */
-function findTotal(){
-    var arr = document.getElementsById('freight,hamali,surch,stch,stch,');
-    var tot=0;
-    for(var i=0;i<arr.length;i++){
-        if(parseInt(arr[i].value))
-            tot += parseInt(arr[i].value);
-    }
-    document.getElementById('total').value = tot;
-}   var alert= alert(tot);
+function startCalc(){
+    interval = setInterval("calc()",1);}
 
-function clearInput(element){
-    element.value="";
+
+
+function calc(){
+    one = document.form.freight.value;
+    two = document.form.hamali.value;
+    three=document.form.surcharge.value;
+    fourth=document.form.stSurcharge.value;
+    fifth=document.form.stCharge.value;
+    six=document.form.riskCharge.value;
+    seven=document.form.doorDel.value;
+    eight=document.form.miscCharge.value;
+    document.form.total.value = (one * 1) + (two * 1) + (three * 1) + (fourth * 1)+(fifth * 1)+(six * 1)+(seven * 1)+(eight * 1);
+
+
 }
+
+
+
+function stopCalc(){
+    clearInterval(interval);}
 
 
 

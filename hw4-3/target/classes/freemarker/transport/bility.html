@@ -79,30 +79,30 @@
 
 
 <div class="bodymain">
-<form id="form" action="/billty" method="post" class="fbody">
+<form id="form" action="/billty" method="post" class="fbody" name="form">
     <div class="upper" id="lower" >
         <div id="lower-wrapper">
 <div id="upper" class="lside">
 
-    <div ><label>Consignment:</label><input type="text" class="inputlt"  pattern="[A-Z]{3}"   name="consignmentId" value="${consign["_id"]}" id="c" style="font-size: 16px "  onclick="clearInput(this)"><span class="rql">*</span> </div>
-    <div ><label>Branch Name:</label><input type="text" class="inputlt"  name="bookingBranch" value="${consign["bookingBranch"]}" id="bn" style="font-size: 16px " ><span class="rql">*</span></div>
-    <div ><label>Consignor:</label><input type="o" id="con" class="inputlt"  name="consignor" value="${consign["consignor"]}" style="font-size: 16px " ><span class="rql">*</span></div>
+    <div ><label style="margin:15px 0 0 0;" >Consignment:</label><input type="text" class="inputlt"  pattern="[A-Z]{3}"   name="consignmentId" value="${consign["_id"]}" id="c" style="font-size: 16px "  onclick="clearInput(this)"><span class="rql">*</span> </div>
+    <div ><label style="margin:15px 0 0 0;">Branch Name:</label><input type="text" class="inputlt"  name="bookingBranch" value="${consign["bookingBranch"]}" id="bn" style="font-size: 16px " ><span class="rql">*</span></div>
+    <div ><label style="margin:15px 0 0 0;">Consignor:</label><input type="o" id="con" class="inputlt"  name="consignor" value="${consign["consignor"]}" style="font-size: 16px " ><span class="rql">*</span></div>
 
-    <div ><label>Mode:</label><select class="inputltm" name="mode" value="${consign["mode"]}" style="font-size: 16px; height: 30px; " >
+    <div ><label style="margin:15px 0 0 0;">Mode:</label><select class="inputltm" name="mode" value="${consign["mode"]}" style="font-size: 16px; height: 30px; " >
         <option>Road</option>
         <option>Plane</option>
         <option>Sea</option>
     </select><span class="rql">*</span> </div>
-    <div ><label>Consigni:</label><input class="inputlt" type="text" name="consignee"  value="${consign["consignee"]}" id="c1" style="color: #4096ee;font-size: 16px " ><span class="rql">*</span></div>
+    <div ><label style="margin:15px 0 0 0;">Consigni:</label><input class="inputlt" type="text" name="consignee"  value="${consign["consignee"]}" id="c1" style="color: #4096ee;font-size: 16px " ><span class="rql">*</span></div>
     </div>
 
 <div id="uppe" class="rside">
-    <div><label>From:</label><input class="inputrt" type="text"  name="fromLoc" value="${consign["fromLoc"]}" id="f"  style="font-size: 16px " ><span class="rql">*</span></div>
-    <div><label>Date:</label><input class="inputrt" type="text"  name="bookDate" value="${consign["bookDate"]}" id="datepicker" style="color: #4096ee;font-size: 16px " ><span class="rql">*</span></div>
-    <div><label>To:</label><input class="inputrt" type="text"  name="toLoc" value="${consign["toLoc"]}" id="t" style="color: #4096ee;font-size: 16px; " ><span class="rql">*</span></div>
-    <div><label>Destination:</label><input class="inputrt" type="text"  name="station" value="${(consign.station)!""}" id="s" style="color: #4096ee;font-size: 12px;; " ><span class="rql">*</span></div>
+    <div><label style="margin:15px 0 0 0;">From:</label><input class="inputrt" type="text"  name="fromLoc" value="${consign["fromLoc"]}" id="f"  style="font-size: 16px " ><span class="rql">*</span></div>
+    <div><label style="margin:15px 0 0 0;">Date:</label><input class="inputrt" type="text"  name="bookDate" value="${consign["bookDate"]}" id="datepicker" style="color: #4096ee;font-size: 16px " ><span class="rql">*</span></div>
+    <div><label style="margin:15px 0 0 0;">To:</label><input class="inputrt" type="text"  name="toLoc" value="${consign["toLoc"]}" id="t" style="color: #4096ee;font-size: 16px; " ><span class="rql">*</span></div>
+    <div><label style="margin:15px 0 0 0;">Destination:</label><input class="inputrt" type="text"  name="station" value="${(consign.station)!""}" id="s" style="color: #4096ee;font-size: 12px;; " ><span class="rql">*</span></div>
 
-    <div><label>Bank Bility:</label><input class="inputltmf" type="checkbox" name="Billty" value="${consign["Billty"]}" id="b1" style="color: #4096ee;font-size: 12px;; " ><span class="rql">*</span></div>
+    <div><label style="margin:15px 0 0 0;">Bank Bility:</label><input class="inputltmf" type="checkbox" name="Billty" value="${consign["Billty"]}" id="b1" style="color: #4096ee;font-size: 12px;; " ><span class="rql">*</span></div>
 </div>
     </div></div>
 <div></div>
@@ -114,50 +114,50 @@
     <div id="lower">
         <div id='lower-wrapper'>
         <div id="footer" class="ft1">
-        <div><label>C N Type:</label><input class="inputs" type="text"  name="cnType" value="${consign["cnType"]}" id="cn" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Packages:</label><input class="inputs" type="text"  name="packages" value="${consign["packages"]}" id="p" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>A Weight:</label><input class="inputs" type="text"  name="aWeight" value="${consign["aWeight"]}" id="w" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Party CH/NO</label><input class="inputs" type="text"  name="partyCH" value="${consign["partyCH"]}" id="pch" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Type:</label><select id="type" class="inputltmf" name="type" value="${consign["type"]}" style="color: #4096ee;font-size: 12px; " >
+        <div><label style="margin:8px 0 0 0 ">C N Type:</label><input class="inputs" type="text"  name="cnType" value="${consign["cnType"]}" id="cn" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Packages:</label><input class="inputs" type="text"  name="packages" value="${consign["packages"]}" id="p" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">A Weight:</label><input class="inputs" type="text"  name="aWeight" value="${consign["aWeight"]}" id="w" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Party CH/NO</label><input class="inputs" type="text"  name="partyCH" value="${consign["partyCH"]}" id="pch" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Type:</label><select id="type" class="inputltmf" name="type" value="${consign["type"]}" style="color: #4096ee;font-size: 12px; " >
             <option>Normal</option>
             <option>Easy</option>
             <option>Difficult</option>
         </select></div>
-        <div><label>Value:</label><input class="inputs" type="text"  name="value" value="${consign["value"]}" id="v1" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Truck No:</label><input class="inputs" type="text"  name="truckNo" value="${consign["truckNo"]}" id="tcn" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Private:</label><input class="inputs" type="text" name="private" value="${consign["private"]}"   id="pm" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Re Bkg lr No:</label><input class="inputs" type="text" name="rebkglrno" value="${consign["rebkglrno"]}" id="rbl" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Value:</label><input class="inputs" type="text"  name="value" value="${consign["value"]}" id="v1" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Truck No:</label><input class="inputs" type="text"  name="truckNo" value="${consign["truckNo"]}" id="tcn" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Private:</label><input class="inputs" type="text" name="private" value="${consign["private"]}"   id="pm" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Re Bkg lr No:</label><input class="inputs" type="text" name="rebkglrno" value="${consign["rebkglrno"]}" id="rbl" style="color: #4096ee;font-size: 12px; " ></div>
     </div>
     <div id="footer" class="ft2">
-        <div><label>Frt At</label><input class="inputs" type="text"  name="frtat" value="${consign["frtat"]}" id="fa" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Pkg Type</label><select class="inputltmf" name="packageType" value="${consign["packageType"]}" id="pt" style="color: #4096ee;font-size: 12px; " >
+        <div><label style="margin:8px 0 0 0 ">Frt At</label><input class="inputs" type="text"  name="frtat" value="${consign["frtat"]}" id="fa" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Pkg Type</label><select class="inputltmf" name="packageType" value="${consign["packageType"]}" id="pt" style="color: #4096ee;font-size: 12px; " >
             <option>1</option>
             <option>2</option>
         </select></div>
-        <div><label>C Weight:</label><input class="inputs" type="text"  name="cweight" value="${(consign.cWeight)!""}" id="cw" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Contains:</label><input class="inputs" type="text"  name="contains" value="${consign["contains"]}" id="c3" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">C Weight:</label><input class="inputs" type="text"  name="cweight" value="${(consign.cWeight)!""}" id="cw" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Contains:</label><input class="inputs" type="text"  name="contains" value="${consign["contains"]}" id="c3" style="color: #4096ee;font-size: 12px; " ></div>
 
-        <div><label>Billed On:</label><input class="inputs" type="text"  name="billedon" value="${(consign.billedOn)!""}" id="bo" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><select class="inputltmf" name="rate" value="${consign["rate"]}" id="r1" style="color: #4096ee;font-size: 12px; " >
+        <div><label style="margin:8px 0 0 0 ">Billed On:</label><input class="inputs" type="text"  name="billedon" value="${(consign.billedOn)!""}" id="bo" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Demo:</label><select class="inputltmf" name="rate" value="${consign["rate"]}" id="r1" style="color: #4096ee;font-size: 12px; " >
             <option>ft</option>
             <option>sq</option>
             <option>mt</option>
         </select></div>
-        <div><label>Advance:</label><input class="inputs" type="text"  name="advance" value="${consign["advance"]}" id="a" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>DLY. Date</label><input class="inputs" type="text" name="bookDate" value="${consign["bookDate"]}" id="do" style="color: #4096ee;font-size: 12px; " ></div>
-        <div><label>Form No:</label><input class="inputs" type="text" name="formNo" value="${consign.formNo!""}" id="fn" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Advance:</label><input class="inputs" type="text"  name="advance" value="${consign["advance"]}" id="a" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">DLY. Date</label><input class="inputs" type="text" name="bookDate" value="${consign["bookDate"]}" id="do" style="color: #4096ee;font-size: 12px; " ></div>
+        <div><label style="margin:8px 0 0 0 ">Form No:</label><input class="inputs" type="text" name="formNo" value="${consign.formNo!""}" id="fn" style="color: #4096ee;font-size: 12px; " ></div>
 
     </div>
 
     <div id="footer" class="ft3">
-        <div><label>Freight:</label><input  class="inputs" type="text" name="freight" value="${consign["freight"]}" id="qty"   onblur="findTotal()" ></div>
-        <div><label>Hamali:</label><input  class="inputs" type="text" name="hamali" value="${consign["hamali"]}" id="qty"   onblur="findTotal()"></div>
-        <div><label>Sur Ch:</label><input  class="inputs" type="text" name="surcharge" value="${consign["surcharge"]}" id="qty"   onblur="findTotal()"></div>
-        <div><label>St Ch:</label><input  class="inputs" type="text" name="stSurcharge" value="${consign["stSurcharge"]}" id="qty"   onblur="findTotal()"></div>
-        <div><label>St Ch:</label><input  class="inputs" type="text" name="stCharge" value="${consign["stCharge"]}" id="qty"   onblur="findTotal()" ></div>
-        <div><label>Risk Ch:</label><input  class="inputs" type="text" name="riskCharge" value="${consign["riskCharge"]}" id="qty"   onblur="findTotal()"></div>
-        <div><label>Door Dly:</label><input  class="inputs" type="text" name="doorDel" value="${consign["doorDel"]}" id="qty"  onblur="findTotal()"></div>
-        <div><label>Form No:</label><input  class="inputs" type="text" name="miscCharge" value="${consign["miscCharge"]}" id="qty"  onblur="findTotal()"></div>
+        <div><label style="margin:8px 0 0 0 ">Freight:</label><input   class="inputs" type="text" name="freight" value="${consign["freight"]}" id="qty1"   onFocus="startCalc();" onBlur="stopCalc();" ></div>
+        <div><label style="margin:8px 0 0 0 ">Hamali:</label><input   class="inputs" type="text" name="hamali" value="${consign["hamali"]}" id="qty2"   onFocus="startCalc();" onBlur="stopCalc();"></div>
+        <div><label style="margin:8px 0 0 0 ">Sur Ch:</label><input   class="inputs" type="text" name="surcharge" value="${consign["surcharge"]}" id="qty3"   onFocus="startCalc();" onBlur="stopCalc();"></div>
+        <div><label style="margin:8px 0 0 0 ">St Ch:</label><input   class="inputs" type="text" name="stSurcharge" value="${consign["stSurcharge"]}" id="qty4"   onFocus="startCalc();" onBlur="stopCalc();"></div>
+        <div><label style="margin:8px 0 0 0 ">St Ch:</label><input   class="inputs" type="text" name="stCharge" value="${consign["stCharge"]}" id="qty5"   onFocus="startCalc();" onBlur="stopCalc();" ></div>
+        <div><label style="margin:8px 0 0 0 ">Risk Ch:</label><input   class="inputs" type="text" name="riskCharge" value="${consign["riskCharge"]}" id="qty6"   onFocus="startCalc();" onBlur="stopCalc();"></div>
+        <div><label style="margin:8px 0 0 0 ">Door Dly:</label><input   class="inputs" type="text" name="doorDel" value="${consign["doorDel"]}" id="qty7"  onFocus="startCalc();" onBlur="stopCalc();"></div>
+        <div><label style="margin:8px 0 0 0 ">Form No:</label><input   class="inputs" type="text" name="miscCharge" value="${consign["miscCharge"]}" id="qty8"  onFocus="startCalc();" onBlur="stopCalc();"></div>
 
         <div><label>Total:</label><input class="inputs" type="text" name="total"  id="total"></div>
     </div>
